@@ -1,0 +1,76 @@
+.Banner {
+  height: 60vh;
+  background-image: url('../../../public/img/banner.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.BannerCaixa {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../../public/img/shape-overlay2.svg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.BannerTexto {
+  max-width: 1800px;
+  padding: 5% 30% 8% 10%;
+}
+
+.Banner h1 {
+  color: #000;
+  font-size: 100px;
+}
+
+.Banner span {
+  color: #d2c58d;
+  font-size: 35px;
+}
+
+.Banner p {
+  color: #6a6862;
+  font-size: 30px;
+}
+
+@media (max-width: 1500px) {
+  .BannerCaixa {
+    background-image: url('../../../public/img/shape-overlay-mobile.svg');
+  }
+  .Banner h1 {
+    font-size: 80px;
+  }
+  .Banner p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .BannerCaixa {
+    background-image: url('../../../public/img/shape-overlay-mobile.svg');
+  }
+  .Banner h1 {
+    font-size: 60px;
+  }
+  .Banner p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Banner {
+    height: 70vh;
+  }
+  .BannerCaixa {
+    background-image: url('../../../public/img/shape-overlay-mobile2.svg');
+  }
+  .Banner h1 {
+    font-size: 55px;
+  }
+  .BannerTexto {
+    padding: 5% 10% 10% 10%;
+  }
+}

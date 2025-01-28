@@ -1,0 +1,143 @@
+.Profissional {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 50px;
+  /* height: 70%; */
+}
+
+.Profissional {
+  margin-top: 5%;
+}
+
+.ProfissionalImg {
+  display: flex;
+  height: 600px;
+}
+
+.ProfissionalImg img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.ProfissionalDescricao {
+  display: grid;
+  align-content: center;
+  padding: 20% 20% 10% 0%;
+  margin-top: -15%;
+  margin-left: 2%;
+}
+
+.ProfissionalDescricao span {
+  color: #d2c58d;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ProfissionalDescricao h2 {
+  font-size: 4rem;
+  /* padding-bottom: 5%; */
+}
+
+.ProfissionalDescricao h3 {
+  font-size: 2rem;
+  color: #6b6239;
+}
+
+.ProfissionalDescricao p {
+  padding-top: 3%;
+  font-size: 1.5rem;
+}
+
+.ProfissionalP {
+  margin-bottom: 10%;
+}
+
+@media (max-width: 1900px) {
+  .ProfissionalImg {
+    height: 500px;
+  }
+  .ProfissionalDescricao {
+    display: grid;
+    align-content: center;
+    padding: 20% 10% 10% 0%;
+    margin-top: -15%;
+  }
+  .ProfissionalDescricao span {
+    font-size: 1rem;
+  }
+  .ProfissionalDescricao h2 {
+    font-size: 3.5rem;
+  }
+  .ProfissionalDescricao p {
+    padding-top: 3%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ProfissionalImg {
+    height: 400px;
+    margin-top: 5%;
+  }
+  .ProfissionalDescricao span {
+    font-size: 1rem;
+  }
+  .ProfissionalDescricao h2 {
+    font-size: 3rem;
+  }
+  .ProfissionalDescricao p {
+    padding-top: 3%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .ProfissionalImg {
+    height: 300px;
+  }
+  .ProfissionalDescricao span {
+    font-size: 0.8rem;
+  }
+  .ProfissionalDescricao h2 {
+    font-size: 1.5rem;
+  }
+  .ProfissionalDescricao p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Profissional {
+    grid-template-columns: 1fr;
+    text-align: center;
+    /* padding-top: 15%; */
+  }
+  .ProfissionalDescricao span {
+    font-size: 0.8rem;
+  }
+  .ProfissionalDescricao h2 {
+    font-size: 1.5rem;
+  }
+  .ProfissionalDescricao p {
+    font-size: 0.8rem;
+  }
+  .ProfissionalImg {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .ProfissionalImg {
+    margin-top: 0px;
+  }
+  .ProfissionalImg img {
+    height: 280px;
+    padding: 0% 5%;
+  }
+  .ProfissionalDescricao {
+    padding: 20% 5%;
+  }
+}

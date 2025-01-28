@@ -1,0 +1,118 @@
+.Escolha {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 6% 0% 10% 0%;
+  padding: 2% 10%;
+  text-align: center;
+}
+
+.Escolha span {
+  color: #d2c58d;
+  font-size: 2rem;
+}
+
+.Escolha h2 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+}
+
+.EscolhaLi {
+  display: flex;
+  gap: 8%;
+}
+
+.EscolhaLi img {
+  width: 50px;
+  padding-bottom: 1%;
+}
+
+.EscolhaLi h3 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.EscolhaLi p {
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+.EscolhaLi li {
+  text-align: center;
+  border: 1px solid #0000001a;
+  box-shadow: 2px 4px 4px 2px #0000032c;
+  border-radius: 8px;
+  width: 500px;
+  padding: 2% 5%;
+}
+
+@media (max-width: 1500px) {
+  .EscolhaLi {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+  }
+  .EscolhaLi li{
+    margin-top: 5%;
+  }
+  .Escolha h2 {
+    margin-bottom: 0%;
+    font-size: 3.5rem;
+  }
+  .Escolha h3 {
+    font-size: 1.5rem;
+  }
+  .EscolhaLi p {
+    font-size: 1.1rem;
+  }
+  .EscolhaLi li {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .EscolhaLi li {
+    width: 300px;
+  }
+  .Escolha span {
+    padding-top: 10%;
+    font-size: 1rem;
+  }
+  .Escolha h2 {
+    font-size: 3rem;
+  }
+  .EscolhaLi h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+  .EscolhaLi p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .EscolhaLi li {
+    text-align: center;
+  }
+  .Escolha h2 {
+    font-size: 2.5rem;
+  }
+  .EscolhaLi h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 425px) {
+  .Escolha h2 {
+    font-size: 2rem;
+  }
+  .EscolhaLi h3 {
+    font-size: 1.2rem;
+  }
+  .EscolhaLi li {
+    width: 280px;
+  }
+}
+
+

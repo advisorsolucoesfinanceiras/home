@@ -1,0 +1,168 @@
+.FooterConteudo {
+  display: flex;
+  justify-content: center;
+  background-image: url('../../../public/img/bannerFooter.svg');
+  background-attachment: fixed;
+  background-position: center;
+  padding: 5%;
+  margin-top: 10%;
+  gap: 8%;
+}
+
+.FooterConteudo h3{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.FooterCaixa {
+  width: 400px;
+}
+
+.FooterCaixa img{
+  width: 30%;
+}
+
+.FooterCaixa p {
+  font-size: 1.2rem;
+  color: #ffffffcb;
+}
+
+.FooterContato h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.FooterContato li {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.FooterContato img {
+  width: 30px;
+  padding-right: 2%;
+}
+
+.FooterIcons {
+  display: flex;
+  gap: 5%;
+}
+
+.FooterCaixaIcons h3 {
+  padding-top: 45%;
+  padding-bottom: 20%;
+}
+
+.FooterCaixaIcons h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.FooterCaixaIcons img {
+  width: 50px;
+}
+
+.FooterCaixaIcons li:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+.FooterCopy {
+  text-align: center;
+  font-size: 1.2rem;
+  display: grid;
+  justify-items: center;
+  margin-bottom: -20%;
+  padding: 20px;
+}
+
+
+.FooterCopy a{
+  color: #000;
+  font-weight: bold;
+}
+
+.FooterCopy a:hover {
+  display: inline-block;
+  color: #393434;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+@media (max-width: 1900px) {
+  .FooterContato h3 {
+    font-size: 1.6rem;
+  }
+  .FooterCaixaIcons h3 {
+    font-size: 1.6rem;
+  }
+  .FooterCaixaIcons h3 {
+    font-size: 1.6rem;
+  }
+  .FooterCaixaIcons img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .FooterContato li {
+    font-size: 1.3rem;
+  }
+  .FooterContato img {
+    width: 20px;
+  }
+  .FooterContato li {
+    color: #fff;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .FooterCaixa {
+    text-align: center;
+    width: 100%;
+  }
+  .FooterCaixa img {
+    width: 80px;
+  }
+  .FooterConteudo {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .FooterCaixa {
+    display: grid;
+    justify-items: center;
+  }
+  .FooterCaixa h3 {
+    font-size: 1.5rem;
+  }
+  .FooterContato {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+  .FooterContato h3 {
+    padding-bottom: 2%;
+    font-size: 1.5rem;
+  }
+  .FooterCaixaIcons {
+    display: grid;
+    justify-items: center;
+  }
+  .FooterCaixaIcons h3 {
+    padding-top: 10%;
+    padding-bottom: 2%;
+    font-size: 1.5rem;
+  }
+  .FooterContato li {
+    font-size: 1rem;
+  }
+  .FooterCaixa p {
+    font-size: 1rem;
+  }
+  .FooterCaixaIcons img {
+    width: 30px;
+  }
+}

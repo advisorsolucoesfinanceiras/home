@@ -1,0 +1,116 @@
+.Servicos {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 6% 0% 10% 0%;
+  padding: 2% 10%;
+  text-align: center;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.Servicos span {
+  color: #d2c58d;
+  font-size: 2rem;
+}
+
+.Servicos h2{
+  margin-bottom: 4%;
+  font-size: 5rem;
+}
+
+.ServicosLi {
+  display: flex;
+  gap: 2%;
+  padding: 0 2%;
+}
+
+.ServicosLi img {
+  width: 30px;
+  padding-bottom: 1%;
+}
+
+.ServicosLi h3 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.ServicosLi p {
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+.ServicosLi ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ServicosLi li {
+  text-align: center;
+  border: 1px solid #0000001a;
+  box-shadow: 1px 4px 4px 1px #0000032c;
+  border-radius: 8px;
+  width: 380px;
+  padding: 3%;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 1500px) {
+  .Servicos h2{
+    margin-bottom: 4%;
+    font-size: 4rem;
+  }
+  .ServicosLi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+  }
+  .ServicosLi li {
+    width: 300px;
+    margin-top: 1%;
+  }
+  .ServicosLi h3 {
+    font-size: 1.5rem;
+  }
+  .ServicosLi p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1090px) {
+  .Servicos span {
+    padding-top: 15%;
+    font-size: 1rem;
+  }
+  .Servicos h2{
+    font-size: 3rem;
+  }
+  .ServicosLi h3 {
+    font-size: 1.5rem;
+  }
+  .ServicosLi p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .Servicos h2{
+    font-size: 2.5rem;
+  }
+  .ServicosLi h3 {
+    font-size: 1.2rem;
+  }
+  .ServicosLi p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .ServicosLi li {
+    width: 250px;
+  }
+}
+
