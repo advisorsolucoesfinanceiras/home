@@ -46,3 +46,20 @@ a, ul , li, button {
   font-family: 'Nunito', sans-serif;
 }
 
+/* --- FORÇAR VERDE EM TODO O SITE --- */
+
+/* Força o verde nos textos informativos menores e tags span */
+span {
+  color: #0b663b !important;
+}
+
+/* Força o verde em todos os títulos principais e subtítulos do site */
+h1, h2, h3, h4, h5, h6 {
+  color: #0b663b !important;
+}
+
+/* Força o verde em todos os links do menu e botões do site */
+a, button {
+  color: #0b663b !important;
+}
+

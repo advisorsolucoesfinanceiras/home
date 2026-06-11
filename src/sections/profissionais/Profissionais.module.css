@@ -1,143 +1,145 @@
-.Profissional {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  max-width: 1920px;
+/* --- ENVELOPE GERAL DA SEÇÃO --- */
+.SecaoWrapper {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 50px;
-  /* height: 70%; */
+  padding: 60px 0;
 }
 
+/* --- CONFIGURAÇÃO ESTRUTURAL PRINCIPAL --- */
 .Profissional {
-  margin-top: 5%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 50px;
 }
 
+/* --- COLUNA DA IMAGEM PRINCIPAL --- */
 .ProfissionalImg {
   display: flex;
-  height: 600px;
+  width: 40%;
+  max-width: 450px;
+  min-width: 320px;
+}
+
+.ProfissionalImg > div {
+  width: 100%;
+  display: flex;
 }
 
 .ProfissionalImg img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 
+/* --- COLUNA DO TEXTO --- */
 .ProfissionalDescricao {
-  display: grid;
-  align-content: center;
-  padding: 20% 20% 10% 0%;
-  margin-top: -15%;
-  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
 }
 
 .ProfissionalDescricao span {
-  color: #d2c58d;
-  font-size: 2rem;
+  color: #0b663b;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .ProfissionalDescricao h2 {
-  font-size: 4rem;
-  /* padding-bottom: 5%; */
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .ProfissionalDescricao h3 {
-  font-size: 2rem;
-  color: #6b6239;
+  font-size: 1.8rem;
+  color: #0b663b;
 }
 
 .ProfissionalDescricao p {
-  padding-top: 3%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
 }
 
 .ProfissionalP {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
-@media (max-width: 1900px) {
-  .ProfissionalImg {
-    height: 500px;
-  }
-  .ProfissionalDescricao {
-    display: grid;
-    align-content: center;
-    padding: 20% 10% 10% 0%;
-    margin-top: -15%;
-  }
-  .ProfissionalDescricao span {
-    font-size: 1rem;
-  }
-  .ProfissionalDescricao h2 {
-    font-size: 3.5rem;
-  }
-  .ProfissionalDescricao p {
-    padding-top: 3%;
-    font-size: 1rem;
-  }
+/* --- CONTAINER DAS DUAS FOTOS DE BAIXO --- */
+.GaleriaFotos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 0 50px;
 }
 
+.FotoItem {
+  width: 250px;
+  height: 250px;
+}
+
+.FotoItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* --- RESPONSIVIDADE (TABLETS E CELULARES) --- */
 @media (max-width: 1024px) {
-  .ProfissionalImg {
-    height: 400px;
-    margin-top: 5%;
-  }
-  .ProfissionalDescricao span {
-    font-size: 1rem;
-  }
   .ProfissionalDescricao h2 {
-    font-size: 3rem;
-  }
-  .ProfissionalDescricao p {
-    padding-top: 3%;
-    font-size: 1rem;
+    font-size: 2.8rem;
   }
 }
 
 @media (max-width: 850px) {
-  .ProfissionalImg {
-    height: 300px;
-  }
-  .ProfissionalDescricao span {
-    font-size: 0.8rem;
-  }
-  .ProfissionalDescricao h2 {
-    font-size: 1.5rem;
-  }
-  .ProfissionalDescricao p {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 600px) {
   .Profissional {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    /* padding-top: 15%; */
+    padding: 40px 20px;
+    gap: 30px;
   }
-  .ProfissionalDescricao span {
-    font-size: 0.8rem;
-  }
-  .ProfissionalDescricao h2 {
-    font-size: 1.5rem;
-  }
-  .ProfissionalDescricao p {
-    font-size: 0.8rem;
-  }
+
   .ProfissionalImg {
-    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .ProfissionalDescricao {
+    width: 100%;
+    align-items: center;
+  }
+
+  .ProfissionalDescricao h2 {
+    font-size: 2.2rem;
+  }
+
+  .ProfissionalDescricao p {
+    font-size: 1.1rem;
+  }
+
+  .GaleriaFotos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
 
 @media (max-width: 425px) {
   .ProfissionalImg {
-    margin-top: 0px;
+    height: 320px;
   }
-  .ProfissionalImg img {
-    height: 280px;
-    padding: 0% 5%;
-  }
-  .ProfissionalDescricao {
-    padding: 20% 5%;
+  .ProfissionalDescricao h2 {
+    font-size: 1.8rem;
   }
 }
